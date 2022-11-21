@@ -12,8 +12,6 @@
 
 
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '2'
-
 import time
 import math
 import h5py
@@ -132,5 +130,5 @@ for datname in alldatname:
         os.makedirs(resultsdir + '/input/' + datname.split('.')[0])
 
     for i in range(orig_.shape[2]):
-        cv2.imwrite(resultsdir + '/' + 'target/' + datname.split('.')[0] + '/' + str(i).zfill(5) + '.png', orig_[:,:,i])
-        cv2.imwrite(resultsdir + '/' + 'input/' + datname.split('.')[0] + '/' + str(i).zfill(5) + '.png', vgapfastdvdnet[:,:,i]*255)
+        cv2.imwrite(resultsdir + '/' + 'target/' + datname.split('.')[0] + '/' + str(i).zfill(8) + '.png', orig_[:,:,i])
+        cv2.imwrite(resultsdir + '/' + 'input/' + datname.split('.')[0] + '/' + str(i).zfill(8) + '.png', vgapfastdvdnet[:,:,i]*255)

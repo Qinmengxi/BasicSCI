@@ -1,0 +1,12 @@
+torch==1.10.0
+scikit-image==0.17.2
+colour
+colour-demosaicing
+colour-science
+h5py
+matplotlib
+opencv-python
+scipy 
+tensorboardX
+tifffile
+torchvision
