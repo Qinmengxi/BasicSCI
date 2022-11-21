@@ -23,7 +23,7 @@ python gap_ffdnet.py
 python gap_fastdvdnet.py
 ```  
 
-6、Reference
+6、Reference  
 (1) https://github.com/liuyang12/PnP-SCI  
 
 
